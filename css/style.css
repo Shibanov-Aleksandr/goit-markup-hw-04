@@ -148,6 +148,12 @@ body {
   padding-bottom: 200px;
 
   background-color: #2f303a;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  background-image: url(../images/bg/Img.jpg);
   text-align: center;
 }
 .hero-title {
