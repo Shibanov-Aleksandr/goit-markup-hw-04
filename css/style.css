@@ -39,16 +39,6 @@ img {
   line-height: 1.16;
   text-align: center;
 }
-
-/* body */
-body {
-  background-color: var(--main-bg-color);
-  color: var(--mail-color-text);
-  font-size: var(--main-fs);
-  font-family: var(--main-font-family);
-  letter-spacing: var(--main-ls);
-}
-
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -60,6 +50,15 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  /* body */
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--mail-color-text);
+    font-size: var(--main-fs);
+    font-family: var(--main-font-family);
+    letter-spacing: var(--main-ls);
+  }
 }
 .section.we-do {
   padding-top: 0;
@@ -75,25 +74,19 @@ body {
 }
 
 .link-webstudio-header {
-  display: block;
-
-  margin-right: 93px;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  color: #000000;
+  display: block; margin-right: 93px;padding-top: 24px;
+  padding-bottom: 24px;color: #000000;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
-  /* outline: 2px solid red; */
+  
 }
 .logo-web {
   color: var(--accent-color);
 }
 .list-nav {
-  display: flex;
+  display: flex;+
   /* outline: 2px solid red; */
 }
 
@@ -140,6 +133,12 @@ body {
 .webstudio-header .list-nav .active {
   color: var(--accent-color);
 }
+.clients {
+  display: flex;
+}
+.clients-list > .clients-link {
+  width: 170px;
+}
 
 /*===== main===== */
 /* =====hero===== */
@@ -149,11 +148,11 @@ body {
 
   background-color: #2f303a;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-  background-image: url(../images/bg/Img.jpg);
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg/Img.jpg);
   text-align: center;
 }
 .hero-title {
@@ -234,11 +233,48 @@ body {
 .privileges-subtitle {
   line-height: 1.7;
 }
+.icon-privileges {
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+}
+
+.icon-antenna-1 {
+  width: 65px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 102px;
+  margin-right: 102px;
+}
+.icon-Vector {
+  width: 66px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 101px;
+  margin-right: 101px;
+}
+.icon-diagram-1 {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.icon-astronaut-1 {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 /* we-do */
 .we-do-list {
   display: flex;
-
-  /* padding-bottom: 94px; */
 }
 .we-do-list > .item {
   flex-basis: calc((100% - 60px) / 3);
@@ -258,7 +294,6 @@ body {
   background-color: #f5f4fa;
 }
 .team-title {
-  /* padding-top: 94px; */
   margin-bottom: 50px;
 }
 .team-list {
@@ -286,6 +321,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-name {
@@ -293,7 +329,55 @@ body {
   padding-bottom: 30px;
 }
 
+/* =====clients===== */
+.clients-icon {
+  display: flex;
+  background-size: 106px 60px;
+}
+.box-icon {
+  flex-basis: auto;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.zxc:not(:last-child) {
+  margin-right: 10px;
+}
+.box-icon:nth-child(1) {
+  background-image: url(../images/svg/clients1.svg);
+}
+.box-icon:nth-child(2) {
+  background-image: url(../images/svg/clients2.svg);
+}
+.box-icon:nth-child(3) {
+  background-image: url(../images/svg/clients3.svg);
+}
+.box-icon:nth-child(4) {
+  background-image: url(../images/svg/clients4.svg);
+  fill: ;rgba(175, 177, 184, 1)
+}
+.box-icon:nth-child(5) {
+  background-image: url(../images/svg/clients5.svg);
+}
+.box-icon:nth-child(6) {
+  background-image: url(../images/svg/clients6.svg);
+}
 /* footer */
+.footer-box{
+  display: flex;
+}
+.footer-social-link
+{display: flex;
+}
+.footer-box-icon:nth-child(1){
+  background-image: url(../images/svg/instagram\1.svg);}
+.footer-box-icon:nth-child(2){}
+.footer-box-icon:nth-child(3){}
+.footer-box-icon:nth-child(4){}
+
 .footer-webstudio {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -391,3 +475,4 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
