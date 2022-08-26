@@ -152,7 +152,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg/Img.jpg);
+    url(../images/bg/hero.jpg);
   text-align: center;
 }
 .hero-title {
@@ -357,7 +357,7 @@ img {
 }
 .box-icon:nth-child(4) {
   background-image: url(../images/svg/clients4.svg);
-  fill: ;rgba(175, 177, 184, 1)
+  
 }
 .box-icon:nth-child(5) {
   background-image: url(../images/svg/clients5.svg);
@@ -373,7 +373,7 @@ img {
 {display: flex;
 }
 .footer-box-icon:nth-child(1){
-  background-image: url(../images/svg/instagram\1.svg);}
+  background-image: url(../images/svg/);}
 .footer-box-icon:nth-child(2){}
 .footer-box-icon:nth-child(3){}
 .footer-box-icon:nth-child(4){}
