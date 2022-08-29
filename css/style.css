@@ -230,7 +230,6 @@ body {
 
 .privileges-list .item {
   width: 270px;
-  /* justify-content: center; */
 }
 
 .privileges-subtitle {
@@ -470,10 +469,12 @@ body {
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--card-set-gap));
   margin-bottom: calc(-1 * var(--card-set-gap));
+  gap: 30px;
+  /* flex-basis: calc((100% - 60px) / 3); */
 }
 
 .list-example > .portfolio-cards {
-  flex-basis: calc((100% - 60px) / 3);
+  /* flex-basis: calc((100% - 60px) / 3); */
   margin-bottom: var(--card-set-gap);
   margin-right: var(--card-set-gap);
 }
@@ -484,6 +485,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .example-title {
   margin-bottom: 4px;
   color: var(--secondary-color-text);
