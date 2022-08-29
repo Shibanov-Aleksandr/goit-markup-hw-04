@@ -45,7 +45,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 .section {
   padding-top: 94px;
@@ -113,7 +112,6 @@ body {
 
 .list-contact {
   display: flex;
-
   margin-left: auto;
 }
 
@@ -129,20 +127,16 @@ body {
 .link-contacts-header {
   color: var(--mail-color-text);
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 .webstudio-header .list-nav .active {
   color: var(--accent-color);
 }
-.mail {
-  width: 16px;
-  height: 12px;
-}
-.phone {
-  width: 10px;
-  height: 16px;
-}
+
 .header-icon {
   fill: #757575;
+  margin-right: 10px;
 }
 .header-icon:hover,
 .header-icon:focus {
@@ -342,9 +336,8 @@ body {
 .clients-list {
   display: flex;
   justify-content: center;
-  flex-basis: calc((100% - 50px) / 5);
-  justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 .clients-list-icon {
   /* width: 106px;
@@ -352,18 +345,15 @@ body {
   fill: rgba(175, 177, 184, 1);
 }
 .clients-list-item {
-  width: 170px;
-  height: 92px;
+  flex-basis: calc((100%-150px) / 5);
 }
 .clients-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 170px;
-  height: 92px; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  flex-basis: calc((100% - 50px) / 5);
+  height: 92px;
 }
 .clients-list-link:hover,
 .clients-list-link:focus {
@@ -483,8 +473,7 @@ body {
 }
 
 .list-example > .portfolio-cards {
-  flex-basis: calc((100% - 90px) / 3);
-
+  flex-basis: calc((100% - 60px) / 3);
   margin-bottom: var(--card-set-gap);
   margin-right: var(--card-set-gap);
 }
