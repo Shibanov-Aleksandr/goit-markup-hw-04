@@ -255,6 +255,8 @@ body {
 }
 .we-do-list > .item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.we-do-list .item:not( :last-child) {
   margin-right: var(--card-set-gap);
 }
 .we-do-title,
@@ -277,12 +279,15 @@ body {
   display: flex;
 }
 .item-team {
-  flex-basis: calc((100% - 90px) / 4);
-  margin-right: var(--card-set-gap);
+  flex-basis: calc((100% - 90px)/4);
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-list .item-team:not(:last-child)
+{
+  margin-right: var(--card-set-gap);
 }
 .team-caption {
   /* margin-top: 30px; */
@@ -335,7 +340,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
 }
 .clients-list-icon {
   /* width: 106px;
@@ -343,7 +348,10 @@ body {
   fill: rgba(175, 177, 184, 1);
 }
 .clients-list-item {
-  flex-basis: calc((100%-150px) / 6);
+  flex-basis: calc((100% - 150px) / 6);
+}
+.clients-list-item:not( :last-child) {
+  margin-right: var(--card-set-gap);
 }
 .clients-list-link {
   display: flex;
@@ -410,9 +418,7 @@ body {
 }
 .link-websudio-footer {
   display: inline-block;
-  gap: 9px;
-
-  margin-bottom: 20px;
+  gap: 9px; margin-bottom: 20px;
   color: var(--main-color-darck-fon);
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -473,11 +479,9 @@ body {
 }
 .portfolio-cards {
   display: block;
-  border: 1px solid #eeeeee;
-}
 
 .list-example > .portfolio-cards {
-  /* flex-basis: calc((100% - 60px) / 3); */
+  flex-basis: calc((100% - 60px) / 3);
   margin-bottom: var(--card-set-gap);
   margin-right: var(--card-set-gap);
 }
