@@ -504,8 +504,8 @@ body {
   line-height: 1.87;
 }
 .name-text {
-  border-top: none;
   border: 1px solid #eeeeee;
+  border-top: none;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 24px;
