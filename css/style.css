@@ -502,6 +502,7 @@ body {
 .example-subtitle {
   font-size: 16px;
   line-height: 1.87;
+  color: var(--mail-color-text);
 }
 .name-text {
   border: 1px solid #eeeeee;
