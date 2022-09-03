@@ -33,7 +33,7 @@
         <nav>
           <ul class="list-nav list">
             <li class="item">
-              <a href="index.html" class="link-nav active">Студія</a>
+              <a href="index.html" class="link-nav active" ::after>Студія</a>
             </li>
             <li class="item">
               <a href="portfolio.html" class="link-nav">Портфоліо</a>
@@ -74,7 +74,9 @@
             Ефективні рішення<br />
             для вашого бізнесу
           </h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -141,28 +143,37 @@
           <h2 class="we-do title">Чим ми займаємося</h2>
           <ul class="we-do-list list">
             <li class="item">
-              <img
-                src="./images/work/box11.jpg"
-                alt="руки на клавіатурі"
-                width="370"
-                height="294"
-              />
+              <div class="we-do-box">
+                <img
+                  src="./images/work/box11.jpg"
+                  alt="руки на клавіатурі"
+                  width="370"
+                  height="294"
+                />
+                <p class="item-name">Десктопні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/work/box2(1).jpg"
-                alt="телефон в руках"
-                width="370"
-                height="294"
-              />
+              <div class="we-do-box">
+                <img
+                  src="./images/work/box2(1).jpg"
+                  alt="телефон в руках"
+                  width="370"
+                  height="294"
+                />
+                <p class="item-name">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/work/box3(1).jpg"
-                alt="планшет в руках"
-                width="370"
-                height="294"
-              />
+              <div class="we-do-box">
+                <img
+                  src="./images/work/box3(1).jpg"
+                  alt="планшет в руках"
+                  width="370"
+                  height="294"
+                />
+                <p class="item-name">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -548,5 +559,16 @@
         </div>
       </div>
     </footer>
+    <!--модалка-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-modal" data-modal-close>
+          <svg class="icon-close" width="18" hidden="18">
+            <use href="./images/sprite/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
